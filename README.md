@@ -24,7 +24,7 @@ let batchedGreet = batchable((calls) => {
 });
 
 function greet(name = 'stranger', callback = () => {}) {
-  batchedHi(name, callback);
+  batchedGreet(name, callback);
 };
 
 greet('Tim');
